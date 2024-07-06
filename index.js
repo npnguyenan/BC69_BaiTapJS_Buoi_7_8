@@ -1,10 +1,17 @@
 let arrSoNguyen = [];
 
-function nhapSoNguyen() {
-  let value = document.getElementById("txtSoNguyen").value * 1;
+document.getElementById("nhapSoNguyen").onsubmit = function (event) {
+  event.preventDefault();
+  let value = document.getElementById("txtSoNguyen").value;
   // console.log(value);
   if (value != "") {
+    value = value * 1;
     if (Number.isInteger(value)) {
+      arrSoNguyen.push(value);
+      document.getElementById("txtSoNguyen").value = "";
+      let content = hienThiMang();
+      document.getElementById("txtArr").innerHTML = content;
+    } else if (value == 0) {
       arrSoNguyen.push(value);
       document.getElementById("txtSoNguyen").value = "";
       let content = hienThiMang();
@@ -13,9 +20,11 @@ function nhapSoNguyen() {
       alert("Vui lòng nhập số nguyên!!");
     }
   } else {
-    alert("Vui lòng nhập số nguyên");
+    alert("Mảng đang rỗng");
   }
-}
+};
+
+function nhapSoNguyen() {}
 
 function hienThiMang(arr = arrSoNguyen) {
   let content = "";
@@ -213,6 +222,7 @@ function nhapSoThuc(arr = arrSoNguyen) {
     arr.push(value);
     let content = hienThiMang();
     document.getElementById("txtArr").innerHTML = content;
+    document.getElementById("txtSoThuc").value = "";
   } else {
     alert("Vui lòng nhập số thực");
   }
