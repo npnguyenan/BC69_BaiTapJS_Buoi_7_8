@@ -71,7 +71,7 @@
               class="btn btn-danger mt-3"
               id="btnSoChanCuoiCung"
             >
-              Tìm số số chẵn cuối cùng
+              Tìm số chẵn cuối cùng
             </button>
             <button
               type="button"
@@ -91,14 +91,6 @@
             </button>
             <button
               type="button"
-              onclick="demSoNguyen()"
-              class="btn btn-outline-dark mt-3"
-              id="btnDemSoNguyen"
-            >
-              Nhập vào mảng số thực đếm số nguyên
-            </button>
-            <button
-              type="button"
               onclick="soSanhAmDuong()"
               class="btn btn-outline-danger mt-3"
               id="btnSoSanh"
@@ -108,8 +100,8 @@
           </div>
         </div>
         <div class="col-6">
-          <h2>Danh sách số nguyên</h2>
-          <span id="txtArrSoNguyen"></span>
+          <h2>Mảng</h2>
+          <span id="txtArr"></span>
         </div>
       </div>
       <div class="row">
@@ -144,6 +136,40 @@
           >
             Đổi vị trí
           </button>
+          <div class="row">
+            <div class="pt-3">
+              <h2>Nhập vào mảng số thực</h2>
+              <div class="mb-3">
+                <label for="" class="form-label">Nhập số thực</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name=""
+                  id="txtSoThuc"
+                  aria-describedby="helpId"
+                  placeholder="Nhập vào số thực"
+                />
+              </div>
+              <div class="row pb-3">
+                <button
+                  type="button"
+                  onclick="nhapSoThuc()"
+                  class="btn btn-outline-success col-6"
+                  id="btnNhapSoThuc"
+                >
+                  Nhập số thực
+                </button>
+                <button
+                  type="button"
+                  onclick="demSoNguyen()"
+                  class="btn btn-outline-primary col-6"
+                  id="btnDemSoNguyen"
+                >
+                  Đếm số nguyên
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-6">
           <h2>Kết quả</h2>
