@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập mảng</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-6 mx-auto">
+          <h2>Bài tập mảng</h2>
+          <div class="mb-3">
+            <label for="" class="form-label">Nhập số nguyên</label>
+            <input
+              type="number"
+              class="form-control"
+              name=""
+              id="txtSoNguyen"
+              aria-describedby="helpId"
+              placeholder="Nhập vào số nguyên"
+            />
+            <button
+              type="submit"
+              onclick="nhapSoNguyen()"
+              class="btn btn-success mt-3"
+              id="btnNhap"
+            >
+              Nhập số nguyên
+            </button>
+            <button
+              type="button"
+              onclick="demSoNguyenDuong()"
+              class="btn btn-dark mt-3"
+              id="btnDemSoDuong"
+            >
+              Đếm số nguyên dương
+            </button>
+            <button
+              type="button"
+              onclick="timSoNhoNhat()"
+              class="btn btn-info mt-3"
+              id="btnSoNhoNhat"
+            >
+              Tìm số nhỏ nhất
+            </button>
+            <button
+              type="button"
+              onclick="timSoDuongNhoNhat()"
+              class="btn btn-warning mt-3"
+              id="btnSoDuongNhoNhat"
+            >
+              Tìm số dương nhỏ nhất
+            </button>
+            <button
+              type="button"
+              onclick="timSoChanCuoiCung()"
+              class="btn btn-danger mt-3"
+              id="btnSoChanCuoiCung"
+            >
+              Tìm số số chẵn cuối cùng
+            </button>
+            <button
+              type="button"
+              onclick="sapXepTangDan()"
+              class="btn btn-primary mt-3"
+              id="btnTangDan"
+            >
+              Sắp xếp tăng dần
+            </button>
+            <button
+              type="button"
+              onclick="timSoNguyenToDauTien()"
+              class="btn btn-secondary mt-3"
+              id="btnTimNguyenToDauTien"
+            >
+              Tìm số nguyên tố đầu tiên
+            </button>
+            <button
+              type="button"
+              onclick="demSoNguyen()"
+              class="btn btn-outline-dark mt-3"
+              id="btnDemSoNguyen"
+            >
+              Nhập vào mảng số thực đếm số nguyên
+            </button>
+            <button
+              type="button"
+              onclick="soSanhAmDuong()"
+              class="btn btn-outline-danger mt-3"
+              id="btnSoSanh"
+            >
+              So sánh số dương và số âm
+            </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <h2>Danh sách số nguyên</h2>
+          <span id="txtArrSoNguyen"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 row">
+          <h2>Nhập vị trí hai giá trị cần đổi chỗ</h2>
+          <div class="mb-3 col-6">
+            <label for="" class="form-label">Vị trí giá trị dầu tiên</label>
+            <input
+              type="number"
+              class="form-control"
+              name=""
+              id="txtViTri1"
+              aria-describedby="helpId"
+              placeholder="Nhập vị trí giá trị đầu tiên"
+            />
+          </div>
+          <div class="mb-3 col-6">
+            <label for="" class="form-label">Vị trí giá trị thứ hai</label>
+            <input
+              type="number"
+              class="form-control"
+              name=""
+              id="txtViTri2"
+              aria-describedby="helpId"
+              placeholder="Nhập vị trí giá trị thứ hai"
+            />
+          </div>
+          <button
+            type="button"
+            onclick="doiViTri()"
+            class="btn btn-outline-warning text-black"
+          >
+            Đổi vị trí
+          </button>
+        </div>
+        <div class="col-6">
+          <h2>Kết quả</h2>
+          <span id="txtKetQua"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
